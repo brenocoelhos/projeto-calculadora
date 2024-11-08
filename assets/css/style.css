@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+:root {
+  --primary-color: rgba(231, 231, 231, 0.863);
+  --primary-color-darker: #681dbe;;
+  --first-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* { 
+  box-sizing: border-box;
+  outline: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 495px;
+  margin: 50px auto;
+  background: rgb(250, 250, 250);
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+  display: grid;
+  text-align: center;
+  justify-items: center;}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+.calculadora{
+  width: 400px;
+}
+
+.display{
+  font-size: 2em;
+  width: 100%;
+  text-align: right;
+  border: 2px solid #adadad;
+  border-radius: 3px ;
+
+}
+.btn{
+  width: 100%;
+  height: 50px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+  background: #dfdfdf96;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background-color: #00000046;
+  color: #fff;
+  transition: 0.5s;
+}
+.btn-eq{
+  background: #681dbe;
+  transition: all 0.5s ease;
+}
+
+.btn-eq:hover{
+  background-color: #511794;
+  color: #fff;
+  transition: 0.5s;
+}
